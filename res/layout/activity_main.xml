@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#D1D1D1"
+    android:gravity="bottom"
+    tools:context=".MainActivity" >
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <TableRow
+            android:id="@+id/rowCabecera"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:gravity="top" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:scaleType="fitStart"
+                android:adjustViewBounds="true"
+                android:src="@drawable/logo" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowTorneos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/misTorneos"
+                style="@style/button_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/blue_button"
+                android:text="Mis torneos" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowCrear"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="1dp"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/crearTorneo"
+                style="@style/button_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="clip_horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/blue_button"
+                android:text="Crear torneo" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowPie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/creditos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:text="Miguel Ángel Lara Arce ©2013" />
+        </TableRow>
+        
+    </TableLayout>
+
+</RelativeLayout>
